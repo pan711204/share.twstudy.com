@@ -1,0 +1,407 @@
+/* === REGISTER VERTIFY FINISH === */
+.main {
+  background: #eee;
+  padding-bottom: 60px;
+}
+.main .content {
+  background: #fff;
+  padding: 70px 15px;
+}
+.main .content .inner-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 880px;
+}
+.main .content .inner-content[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .content .inner-content.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .subtitle {
+  text-align: center;
+  position: relative;
+  font-size: 1.75rem;
+  padding: 0 0 15px 0;
+  margin: 0 auto 45px auto;
+}
+.main .subtitle:before {
+  content: "";
+  width: 83px;
+  height: 1px;
+  background: #f97141;
+  bottom: 0;
+  left: 50%;
+  margin-left: -41px;
+  position: absolute;
+}
+.main .login-method {
+  width: 100%;
+  display: block;
+  font-size: 0;
+  margin-bottom: 40px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.main .login-method:before {
+  content: "";
+  width: 210px;
+  height: 80px;
+  background: url(../images/logo_share_twstudy.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  display: block;
+  margin: 0 auto 30px auto;
+}
+.main .login-method .box {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 10px;
+  padding: 0;
+}
+.main .login-method .box .link {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  color: #222;
+  -moz-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+  text-align: center;
+  padding: 35px 0;
+}
+.main .login-method .box .link span {
+  display: block;
+  font-size: 1.25rem;
+}
+.main .login-method .box .link span:before {
+  content: "";
+  width: 220px;
+  height: 70px;
+  display: block;
+  margin: 0 auto 10px auto;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .login-method .box .link:hover {
+  background: #e5e5e5;
+}
+.main .login-method .box.fb {
+  padding-right: 10px;
+}
+.main .login-method .box.fb .link span:before {
+  background-image: url(../images/login-fb.png);
+}
+.main .login-method .box.google {
+  padding-left: 10px;
+}
+.main .login-method .box.google .link span:before {
+  background-image: url(../images/login-google.png);
+}
+.main .login-func {
+  text-align: center;
+}
+.main .login-func .link {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 10px;
+  padding: 0 0 0 40px;
+  color: #222;
+}
+.main .login-func .link span {
+  display: inline-block;
+  border-bottom: 1px solid #222;
+}
+.main .login-func .link:hover {
+  color: #f97141;
+}
+.main .login-func .link:hover span {
+  border-bottom: 1px solid #f97141;
+}
+.main .login-func .link:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main .login-func .link.link-forget:before {
+  background: url(../images/icon-login-func-forget.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .login-func .link.link-join:before {
+  background: url(../images/icon-login-func-join.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+
+@media (max-width: 1299px) {
+  .main .subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .main .content {
+    padding: 50px 15px;
+  }
+  .main .subtitle {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: 0 !important;
+  }
+  .main .content {
+    padding: 30px 15px 50px 15px;
+    margin: 0 -15px;
+  }
+  .main .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .main .subtitle span {
+    display: block;
+  }
+  .main .login-method {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .main .login-method:before {
+    width: 150px;
+    height: 57px;
+  }
+  .main .login-method .box .link {
+    padding: 15px;
+  }
+  .main .login-method .box .link span {
+    font-size: 1rem;
+  }
+  .main .login-method .box .link span:before {
+    width: 150px;
+    height: 47px;
+    margin: 0 auto;
+  }
+  .main .login-func .link {
+    margin: 0 10px 10px 10px;
+    font-size: 0.9375rem;
+  }
+}
+@media (max-width: 499px) {
+  .main .subtitle {
+    font-size: 1.0625rem;
+  }
+  .main .subtitle span {
+    display: inline;
+  }
+  .main .login-method {
+    margin-bottom: 0;
+  }
+  .main .login-method:before {
+    display: none;
+  }
+  .main .login-method:after {
+    content: "";
+    background: url(../images/logo_share_twstudy.png) no-repeat 0 0;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 150px;
+    height: 57px;
+  }
+  .main .login-method .box {
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px auto;
+  }
+  .main .login-method .box.fb, .main .login-method .box.google {
+    padding: 0;
+  }
+  .main .login-method .box .link span:before {
+    width: 100px;
+    height: 31px;
+  }
+}
+@media (max-width: 399px) {
+  .main .login-func .link {
+    font-size: 0.875rem;
+    padding-left: 28px;
+  }
+  .main .login-func .link:before {
+    width: 26px;
+    height: 26px;
+  }
+}
+/* === Form Module === */
+/* STAR */
+.star {
+  font-size: 1rem;
+  line-height: 1;
+  color: #f97141;
+  display: inline-block;
+  position: absolute;
+  top: 12px;
+  left: -3px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}
+
+@media (max-width: 639px) {
+  .star {
+    top: 5px;
+  }
+}
+/* LABEL */
+.label-style {
+  font-size: 1.125rem;
+  padding: 0 10px 0 5px;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  width: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 44px;
+}
+
+@media (max-width: 639px) {
+  .label-style {
+    width: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+.form-box {
+  display: block;
+  position: relative;
+  margin: 0 0 40px 0;
+  padding: 0 0 0 70px;
+}
+
+@media (max-width: 767px) {
+  .form-box {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 639px) {
+  .form-box {
+    padding-left: 0;
+  }
+}
+.input-style {
+  background: #fff;
+  height: 44px;
+  padding: 0 10px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid #e4e4e4;
+  -moz-transition: border 0.15s;
+  -o-transition: border 0.15s;
+  -webkit-transition: border 0.15s;
+  transition: border 0.15s;
+}
+.input-style:focus {
+  border: 1px solid #666;
+}
+
+/* BUTTON */
+.btn-wrap {
+  margin: 50px auto;
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .btn-wrap {
+    margin: 30px auto;
+  }
+}
+.btn-login {
+  height: 60px;
+  max-width: 190px;
+  padding: 0 35px;
+  border: none;
+  line-height: 60px;
+  color: #fff;
+  background: #f97141;
+  font-size: 1.125rem;
+  cursor: pointer;
+}
+.btn-login:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  margin-top: -5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/icon-login.png);
+  background-repeat: no-repeat;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.btn-login:hover {
+  background: #F95A3E;
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .btn-login {
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+  .btn-login:before {
+    width: 26px;
+    height: 26px;
+  }
+}
+@media (max-width: 399px) {
+  .btn-login {
+    max-width: none;
+    width: 100%;
+  }
+}

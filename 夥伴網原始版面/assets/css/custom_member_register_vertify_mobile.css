@@ -1,0 +1,353 @@
+/* === REGISTER VERTIFY MOBILE === */
+.main {
+  background: #eee;
+  padding-bottom: 60px;
+}
+.main .content {
+  background: #fff;
+  padding: 70px 15px;
+}
+.main .content .inner-content {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 695px;
+}
+.main .content .inner-content[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .content .inner-content.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .subtitle {
+  text-align: center;
+  position: relative;
+  font-size: 1.75rem;
+  padding: 0;
+  margin: 0 auto 10px auto;
+}
+.main .subtitle:before {
+  content: "";
+  width: 210px;
+  height: 80px;
+  background: url(../images/logo_share_twstudy.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+.main .vertify-msg {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  position: relative;
+  font-size: 1.75rem;
+  padding: 0 0 15px 0;
+  margin: 0 auto 20px auto;
+  color: #c64545;
+}
+.main .vertify-info {
+  margin-top: 20px;
+}
+.main .vertify-info a {
+  display: inline-block;
+  color: #f97141;
+}
+.main .vertify-info a:hover {
+  color: #f2531b;
+  text-decoration: underline;
+}
+.main .vertify-info .title {
+  position: relative;
+  margin-bottom: 10px;
+}
+.main .vertify-info .title:after {
+  content: "";
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .vertify-info .title:before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  height: 10px;
+  background: url(../images/bg-slash.png) repeat-x 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .vertify-info .title > h4 {
+  z-index: 1;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 15px 0 30px;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  color: #222;
+}
+.main .vertify-info .title > h4 span {
+  z-index: 2;
+  position: relative;
+}
+.main .vertify-info .title > h4:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon-vertify-info.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .vertify-info .title > h4:after {
+  content: "";
+  background: #fff;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .vertify-info .list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.main .vertify-info .list li {
+  list-style: decimal;
+  display: list-item;
+  list-style-position: outside;
+  margin: 0 auto 5px auto;
+}
+
+@media (max-width: 1299px) {
+  .main .subtitle, .main .vertify-msg {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .main .content {
+    padding: 50px 15px;
+  }
+  .main .subtitle, .main .vertify-msg {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: 0 !important;
+  }
+  .main .content {
+    padding: 30px 15px;
+    margin: 0 -15px;
+  }
+  .main .subtitle, .main .vertify-msg {
+    font-size: 1.2rem;
+  }
+  .main .subtitle:before {
+    width: 150px;
+    height: 57px;
+  }
+}
+@media (max-width: 499px) {
+  .main .subtitle, .main .vertify-msg {
+    font-size: 1.0625rem;
+  }
+  .main .subtitle:before {
+    display: none;
+  }
+}
+/* === Form Module === */
+/* LABEL */
+.label-style {
+  font-size: 1.125rem;
+  padding: 0 10px 0 5px;
+  margin: 0;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  width: 110px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 44px;
+}
+
+@media (max-width: 639px) {
+  .label-style {
+    width: auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+.form-box {
+  display: block;
+  position: relative;
+  margin: 0 0 50px 0;
+  padding: 0 200px 0 110px;
+}
+.form-box.term {
+  padding-left: 0;
+  padding-right: 0;
+}
+.form-box.term .label-style {
+  position: relative;
+  top: auto;
+  left: auto;
+}
+
+@media (max-width: 767px) {
+  .form-box {
+    padding-right: 140px;
+  }
+}
+@media (max-width: 639px) {
+  .form-box {
+    padding-left: 0;
+  }
+}
+.input-style {
+  background: #fff;
+  height: 44px;
+  padding: 0 10px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid #e4e4e4;
+  -moz-transition: border 0.15s;
+  -o-transition: border 0.15s;
+  -webkit-transition: border 0.15s;
+  transition: border 0.15s;
+}
+.input-style:focus {
+  border: 1px solid #666;
+}
+
+/* BUTTON */
+.btn-wrap {
+  margin: 50px auto;
+  padding: 0;
+  text-align: center;
+}
+
+@media (max-width: 639px) {
+  .btn-wrap {
+    margin: 30px auto;
+  }
+}
+.btn-send {
+  height: 44px;
+  width: 190px;
+  background: #525252;
+  color: #fff;
+  font-size: 1.125rem;
+  text-align: center;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  right: 0;
+  border: none;
+  -moz-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+}
+.btn-send:hover {
+  background: #777;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .btn-send {
+    width: 130px;
+    font-size: 1rem;
+  }
+}
+.btn-resendcode {
+  height: 60px;
+  width: 100%;
+  max-width: 230px;
+  padding: 0 15px;
+  border: none;
+  line-height: 60px;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.125rem;
+  cursor: pointer;
+  background: #f97141;
+}
+.btn-resendcode:before {
+  content: "";
+  width: 47px;
+  height: 44px;
+  margin-top: -5px;
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  background-image: url(../images/icon-btn-resendcode.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.btn-resendcode:hover {
+  background: #F95A3E;
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .btn-resendcode {
+    height: 44px;
+    line-height: 44px;
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+  .btn-resendcode:before {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/*# sourceMappingURL=custom_register_vertify_mobile.css.map */

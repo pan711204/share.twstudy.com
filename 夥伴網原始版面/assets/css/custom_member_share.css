@@ -1,0 +1,67 @@
+.sec { padding: 10px 0 30px; }
+.sec .copyBox { margin-bottom: 20px; background: #f9ebe6; padding: 30px 40px; border-radius: 5px; }
+.sec .copyBox .url { width: calc(100% - 140px); height: 60px; line-height: 60px; padding: 0 10px; font-size: 1.125rem; background: #fff; border: 1px solid #e5e5e5; border-radius: 5px; float: left; overflow: hidden; }
+.sec .copyBox .btn-copy { border: 1px solid #f97141; background: #f97141; border-radius: 5px; color: #fff; text-align: center; width: 130px; height: 60px; float: right; font-size: 1.25rem; cursor: pointer; outline: none; }
+.sec .note { margin: 0; text-align: center; font-size: 0.937rem; }
+.sec .note a { color: #007cbd; }
+.sec .steps { counter-reset: section; }
+.sec .steps li { display: block; position: relative; overflow: hidden; padding-left: 110px; padding-bottom: 30px; z-index: 2; }
+.sec .steps li:after { content: ""; position: absolute; top: 0; left: 40px; height: 100%; width: 2px; background: #f97141; z-index: -1; }
+.sec .steps li:last-child { padding-bottom: 0; }
+.sec .steps li:last-child:after { display: none; }
+.sec .steps li a { color: #007cbd; }
+.sec .steps li p { margin: 2px 0; }
+.sec .steps li .icon { position: absolute; left: 0; top: 0; width: 80px; height: 80px; border: 1px solid #f97141; border-radius: 50%; background: #f9ebe6; }
+.sec .steps li .icon:before { content: ""; position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; z-index: 1; display: block; background: url(../images/mem-step-icon.png) no-repeat; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+.sec .steps li .ti { font-size: 1.125rem; font-weight: bold; color: #222; position: relative; margin-top: 25px; padding-left: 100px; }
+.sec .steps li .ti:before, .sec .steps li .ti:after { position: absolute; top: 50%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+.sec .steps li .ti:before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: #f97141; display: block; left: 0; }
+.sec .steps li .ti:after { content: "Step" counter(section); counter-increment: section; position: absolute; color: #f97141; font-size: 1.375rem; left: 20px; }
+.sec .steps li .txt { font-size: 0.937rem; padding-left: 100px; }
+.sec .steps li:nth-child(1) .icon:before { background-position-x: 0%; }
+.sec .steps li:nth-child(2) .icon:before { background-position-x: 33%; }
+.sec .steps li:nth-child(3) .icon:before { background-position-x: 66%; }
+.sec .steps li:nth-child(4) .icon:before { background-position-x: 100%; }
+@media only screen and (max-width: 990px) {
+  .sec .copyBox .btn-copy {font-size: 1.125rem; white-space: nowrap;}
+  .sec .copyBox .btn-copy i{font-size: 1rem;}
+}
+@media only screen and (max-width: 767px) { .sec .copyBox { padding: 20px; }
+  .sec .copyBox .url { font-size: 1rem; }
+  .sec .steps li .ti { margin-top: 0px; margin-bottom: 10px; padding-left: 80px; }
+  .sec .steps li .ti:after { font-size: 1.125rem; }
+  .sec .steps li .txt { padding-left: 0px; } }
+@media only screen and (max-width: 480px) { .sec .copyBox { padding: 20px; }
+  .sec .copyBox .url, .sec .copyBox .btn-copy { float: none; width: 100%; height: 50px; line-height: 50px; }
+  .sec .copyBox .btn-copy { margin-top: 6px; font-size: 1.125rem; }
+  .sec .steps li { padding-left: 80px; padding-bottom: 10px; }
+  .sec .steps li:after { left: 30px; }
+  .sec .steps li .icon { width: 60px; height: 60px; } }
+
+.share-history { background: #eaeaea; padding: 60px 0; }
+.share-history .g-title { background-image: url(../images/tit-bg-grey.jpg); }
+.share-history .g-title .ti { background: #eaeaea; }
+.share-history .g-title .ti .select { font-size: 1rem; display: inline-block; vertical-align: middle; border: 1px solid #d2d2d2; position: relative; background: #fff; }
+.share-history .g-title .ti .select:before, .share-history .g-title .ti .select:after { content: ""; pointer-events: none; position: absolute; display: block; }
+.share-history .g-title .ti .select:before { z-index: 2; right: 10px; top: 50%; width: 8px; height: 8px; border-bottom: 2px solid #fff; border-right: 2px solid #fff; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); -moz-transform-origin: 100% 0%; -ms-transform-origin: 100% 0%; -webkit-transform-origin: 100% 0%; transform-origin: 100% 0%; }
+.share-history .g-title .ti .select:after { width: 30px; height: 100%; background: #707070; z-index: 1; right: 0; top: 0; }
+.share-history .g-title .ti .select select { font-size: 1rem; padding: 3px 5px; min-width: 120px; border: none; background: none; -moz-appearance: none; -webkit-appearance: none; }
+.share-history .g-title .ti .select select::-ms-expand { display: none; }
+.share-history .table { text-align: center; border: 1px solid #e5e5e5; }
+.share-history .table thead { background: #434343; }
+.share-history .table thead td { font-size: 1rem; color: #fff; }
+.share-history .table tbody tr { background: #fff; }
+.share-history .table tbody tr:nth-child(odd) { background: #f8f8f8; }
+.share-history .table tbody tr td { font-size: 0.937rem; border: 1px solid #e5e5e5; padding: 8px; }
+
+.pop-share{position: relative; border: 1px solid #f97141; border-radius: 5px; padding: 10px;}
+.pop-share .table-style{width: 100%; max-width: 980px; background: #fff; border-radius: 5px; background: url(../images/pop_head.jpg) no-repeat 0 0, url(../images/pop_foot.jpg) no-repeat 0 100%; background-color: #fff;}
+.pop-share .table-style thead td{padding: 60px 0 40px;}
+.pop-share .table-style tbody td{width: 50%; text-align: center; padding: 30px 50px 70px; position: relative;}
+.pop-share .table-style tbody td:last-child:before{content: ""; position: absolute; left: 0; top: 50%; margin-top: -35%; width: 1px; height: 70%; background: #f97141; opacity: 0.2;}
+.pop-share .title{font-size: 2.375rem; text-align: center; font-weight: bold; letter-spacing: 3px; color: #fff; text-shadow: 3px 3px 3px #f97141;}
+@media only screen and (max-width: 767px){
+  .pop-share .table-style tbody{display: block; padding-bottom: 80px;}
+  .pop-share .table-style tbody td{display: block; width: 100%; padding: 10px 20px;}
+  .pop-share .title{font-size: 1.85rem; }
+}

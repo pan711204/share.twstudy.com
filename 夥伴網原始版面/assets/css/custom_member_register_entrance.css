@@ -1,0 +1,264 @@
+/* === REGISTER ENTRANCE === */
+.main {
+  background: #eee;
+  padding-bottom: 60px;
+}
+.main .content {
+  background: #fff;
+  padding: 70px;
+}
+.main .register-select--title {
+  display: block;
+  text-align: center;
+  font-size: 1.875rem;
+  margin: 0 auto 50px auto;
+  color: #222;
+}
+.main .register-select--title br {
+  display: none;
+}
+.main .register-select--title .logo-twstudy {
+  display: inline-block;
+  vertical-align: middle;
+  width: 210px;
+  height: 60px;
+  margin: 0 10px;
+  background: url(../images/logo_twstudy.png) no-repeat 0 center;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  font-size: 0;
+  line-height: 0;
+}
+.main .register-select--items {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 0;
+}
+.main .register-select--items .box {
+  text-align: center;
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+  padding: 0 10px 10px 10px;
+}
+.main .register-select--items .box[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .register-select--items .box.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .register-select--items .box .inner-box {
+  position: relative;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 15px;
+  margin: 0 auto;
+  -moz-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+}
+.main .register-select--items .box .inner-box:hover {
+  background-color: #f4f4f4;
+}
+.main .register-select--items .box .pic {
+  display: block;
+  width: 125px;
+  height: 125px;
+  margin: 0 auto 15px auto;
+  background-image: url(../images/pic-register-select.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.main .register-select--items .box.yes .pic {
+  background-position: 0 0;
+}
+.main .register-select--items .box.no .pic {
+  background-position: 0 100%;
+}
+.main .register-select--items .box .title {
+  font-size: 1.375rem;
+  margin: 0 auto 20px auto;
+  display: block;
+  text-align: center;
+}
+.main .register-select--items .box .title i {
+  font-size: 5rem;
+  line-height: 1;
+  display: block;
+  margin: 0 auto 15px;
+  font-style: normal;
+}
+.main .register-select--items .box .btn-regist {
+  border-radius: 5px;
+  font-size: 1.125rem;
+  padding: 10px 5px;
+  max-width: 210px;
+  background: #f97141;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px auto;
+  width: 100%;
+  -moz-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+}
+.main .register-select--items .box .btn-regist:hover {
+  background: #f2531b;
+}
+.main .register-select--items .box .btn-regist span {
+  display: inline-block;
+  padding-left: 40px;
+  width: auto;
+  position: relative;
+}
+.main .register-select--items .box .btn-regist span:before {
+  content: "";
+  width: 39px;
+  height: 39px;
+  background: url(../images/icon-btn-register.png) no-repeat 0 0;
+  display: inline-block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .register-select--items .box .regist-msg {
+  display: block;
+  font-size: 1rem;
+}
+
+@media (max-width: 991px) {
+  .main .content {
+    padding: 50px 35px;
+  }
+  .main .register-select--title {
+    font-size: 1.5rem;
+  }
+  .main .register-select--title .logo-twstudy {
+    width: 180px;
+    height: 51px;
+  }
+  .main .register-select--items .box .title {
+    font-size: 1.2rem;
+  }
+  .main .register-select--items .box .title i {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    padding-bottom: 0 !important;
+  }
+  .main .content {
+    padding: 20px 15px;
+    margin: 0 -15px;
+  }
+  .main .register-select--title {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  .main .register-select--title .logo-twstudy {
+    width: 150px;
+    height: 43px;
+  }
+  .main .register-select--items .box .title {
+    font-size: 1.2rem;
+  }
+  .main .register-select--items .box .title i {
+    font-size: 2.5rem;
+  }
+  .main .register-select--items .box .btn-regist {
+    font-size: 1rem;
+  }
+  .main .register-select--items .box .btn-regist span {
+    padding-left: 35px;
+  }
+  .main .register-select--items .box .btn-regist span:before {
+    width: 33px;
+    height: 33px;
+    top: -2px;
+  }
+}
+@media (max-width: 639px) {
+  .main .register-select--title br {
+    display: inline-block;
+  }
+  .main .register-select--items .box {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto 20px auto;
+    display: block;
+    text-align: left;
+  }
+  .main .register-select--items .box .inner-box {
+    padding: 15px 15px 60px 160px;
+  }
+  .main .register-select--items .box .pic {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    margin-top: -70px;
+    width: 100px;
+    height: 100px;
+  }
+  .main .register-select--items .box.no .pic {
+    margin-top: -80px;
+  }
+  .main .register-select--items .box .title {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .main .register-select--items .box .title i {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 0 auto 10px auto;
+  }
+  .main .register-select--items .box .btn-regist {
+    max-width: none;
+    width: auto;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    border-radius: 0 0 10px 10px;
+  }
+  .main .register-select--items .box .btn-regist span:before {
+    top: 50%;
+    margin-top: -17px;
+  }
+  .main .register-select--items .box .regist-msg {
+    margin-top: 5px;
+    font-size: 0.9125rem;
+  }
+}
+
+/*# sourceMappingURL=custom_register_entrance.css.map */

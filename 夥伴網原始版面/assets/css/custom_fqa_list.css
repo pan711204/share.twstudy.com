@@ -1,0 +1,242 @@
+/* === FQA - LIST === */
+.main {
+  background: #f9f9f9;
+}
+.main .fqa-index-list {
+  margin-bottom: 50px;
+}
+.main .fqa-index-list .box {
+  margin-bottom: 40px;
+}
+.main .fqa-index-list .box[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .fqa-index-list .box.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .fqa-index-list .box .title {
+  position: relative;
+  padding-right: 95px;
+  margin-bottom: 20px;
+}
+.main .fqa-index-list .box .title:after {
+  content: "";
+  width: 95px;
+  background: #f9f9f9;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .fqa-index-list .box .title:before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  height: 10px;
+  background: url(../images/bg-slash.png) repeat-x 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .fqa-index-list .box .title .more {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  padding-right: 30px;
+  padding-left: 10px;
+  color: #222;
+  font-size: 0.9375rem;
+  line-height: 1;
+  text-transform: uppercase;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -moz-transition: color 0.12s;
+  -o-transition: color 0.12s;
+  -webkit-transition: color 0.12s;
+  transition: color 0.12s;
+}
+.main .fqa-index-list .box .title .more:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+  width: 18px;
+  height: 14px;
+  background: url(../images/icon-more-aw.png) no-repeat right center;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .fqa-index-list .box .title .more:hover {
+  color: #eb8662;
+}
+.main .fqa-index-list .box .title > h3 {
+  z-index: 1;
+  font-size: 1.875rem;
+  line-height: 1;
+  padding: 0 15px 0 50px;
+  position: relative;
+  display: inline-block;
+  color: #222;
+  font-weight: 400;
+}
+.main .fqa-index-list .box .title > h3 span {
+  position: relative;
+  z-index: 2;
+}
+.main .fqa-index-list .box .title > h3:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -5px;
+  width: 43px;
+  height: 43px;
+  margin-top: -21px;
+  background: url(../images/icon-lamp.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .fqa-index-list .box .title > h3:after {
+  content: "";
+  background: #f9f9f9;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .fqa-index-list .box .list {
+  counter-reset: mynum;
+  font-size: 0;
+  margin-left: 40px;
+}
+.main .fqa-index-list .box .list li {
+  font-size: 1rem;
+  width: 50%;
+  vertical-align: top;
+  display: inline-block;
+  margin: 0 auto;
+  border-bottom: 1px solid #e5e5e5;
+}
+.main .fqa-index-list .box .list li:nth-child(2) {
+  border-top: none;
+}
+.main .fqa-index-list .box .list li:nth-child(-n+9) a:before {
+  content: "0" counter(mynum);
+}
+.main .fqa-index-list .box .list li a {
+  color: #222;
+  padding: 15px 15px 15px 45px;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -moz-transition: color 0.12s;
+  -o-transition: color 0.12s;
+  -webkit-transition: color 0.12s;
+  transition: color 0.12s;
+}
+.main .fqa-index-list .box .list li a:before {
+  counter-increment: mynum;
+  content: counter(mynum);
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  line-height: 29px;
+  text-align: center;
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  background: #525252;
+  -moz-transition: background 0.12s;
+  -o-transition: background 0.12s;
+  -webkit-transition: background 0.12s;
+  transition: background 0.12s;
+}
+.main .fqa-index-list .box .list li a:hover {
+  color: #666;
+}
+.main .fqa-index-list .box .list li a:hover:before {
+  background: #eb8662;
+}
+
+@media (max-width: 991px) {
+  .main .fqa-index-list {
+    margin-bottom: 20px;
+  }
+  .main .fqa-index-list .box .title > h3 {
+    font-size: 1.5rem;
+  }
+  .main .fqa-index-list .box .list {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .main .fqa-index-list .box .title > h3 {
+    font-size: 1.2rem;
+    padding-left: 40px;
+  }
+  .main .fqa-index-list .box .title > h3:before {
+    top: -12px;
+    margin-top: 0;
+  }
+  .main .fqa-index-list .box .list {
+    margin-left: 0;
+  }
+  .main .fqa-index-list .box .list li a {
+    padding: 12px 12px 12px 40px;
+  }
+  .main .fqa-index-list .box .list li a:before {
+    top: 10px;
+  }
+}
+@media (max-width: 639px) {
+  .main .fqa-index-list .box .list li {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=custom_fqa_list.css.map */

@@ -1,0 +1,268 @@
+/* === REGISTER === */
+
+.popup-getpwd {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 40px 80px;
+  border-radius: 10px;
+  background: #eee;
+  position: relative;
+}
+.popup-getpwd .mfp-close {
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  font-size: 0;
+  border: none;
+}
+.popup-getpwd .mfp-close:before, .popup-getpwd .mfp-close:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.popup-getpwd .mfp-close:before {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.popup-getpwd .mfp-close:after {
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.popup-getpwd .mfp-close:active, .popup-getpwd .mfp-close:focus {
+  margin: 0;
+}
+.popup-getpwd .subtitle {
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+.popup-getpwd .subtitle:before {
+  content: "";
+  width: 210px;
+  height: 80px;
+  background: url(../images/logo_share_twstudy.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+.popup-getpwd .form-box {
+  padding: 0;
+  margin: 0 auto 25px auto;
+}
+.popup-getpwd .form-box .label-style {
+  display: block;
+  font-size: 1.125rem;
+  position: relative;
+  top: auto;
+  left: auto;
+  padding: 0;
+}
+.popup-getpwd .form-box .input-style {
+  border: none;
+  background: #434343;
+  color: #fff;
+  height: 44px;
+  padding: 0 10px;
+  width: 100%;
+  display: block;
+  outline: none;
+  -moz-transition: border 0.15s;
+  -o-transition: border 0.15s;
+  -webkit-transition: border 0.15s;
+  transition: border 0.15s;
+}
+.popup-getpwd .form-box .input-style:focus {
+  background: #555;
+}
+.popup-getpwd .form-box .input-style::-webkit-input-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style::-moz-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style:-ms-input-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style:-moz-placeholder {
+  color: #999;
+}
+.popup-getpwd .btn-resend {
+  height: 60px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  display: block;
+  color: #fff;
+  font-size: 1.125rem;
+  cursor: pointer;
+  background: #f97141;
+}
+.popup-getpwd .btn-resend:hover {
+  background: #F95A3E;
+  color: #fff;
+}
+.popup-getpwd .vertify-info {
+  margin-top: 20px;
+}
+.popup-getpwd .vertify-info a {
+  display: inline-block;
+  color: #f97141;
+}
+.popup-getpwd .vertify-info a:hover {
+  color: #f2531b;
+  text-decoration: underline;
+}
+.popup-getpwd .vertify-info .title {
+  position: relative;
+  margin-bottom: 10px;
+}
+.popup-getpwd .vertify-info .title:after {
+  content: "";
+  width: 10px;
+  background: #eee;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.popup-getpwd .vertify-info .title:before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  height: 10px;
+  background: url(../images/bg-slash.png) repeat-x 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.popup-getpwd .vertify-info .title > h4 {
+  z-index: 1;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0 15px 0 30px;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  color: #222;
+}
+.popup-getpwd .vertify-info .title > h4 span {
+  z-index: 2;
+  position: relative;
+}
+.popup-getpwd .vertify-info .title > h4:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  background: url(../images/icon-vertify-info.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.popup-getpwd .vertify-info .title > h4:after {
+  content: "";
+  background: #eee;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.popup-getpwd .vertify-info .list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.popup-getpwd .vertify-info .list li {
+  list-style: decimal;
+  display: list-item;
+  list-style-position: outside;
+  margin: 0 auto 5px auto;
+}
+
+@media (max-width: 991px) {
+  .popup-getpwd .subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .popup-getpwd {
+    padding: 20px 30px 30px 30px;
+  }
+  .popup-getpwd .subtitle {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .popup-getpwd .subtitle:before {
+    width: 150px;
+    height: 57px;
+    margin-bottom: 0;
+    display: none;
+  }
+  .popup-getpwd .subtitle:after {
+    content: "";
+    background: #f97141;
+    height: 1px;
+    width: 50px;
+    margin-left: -25px;
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+  }
+  .popup-getpwd .form-box {
+    margin: 0 auto 10px auto;
+  }
+  .popup-getpwd .form-box .label-style {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .popup-getpwd .btn-resend {
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 399px) {
+  .popup-getpwd {
+    padding: 20px 15px 30px 15px;
+  }
+  .popup-getpwd .btn-resend {
+    max-width: none;
+    font-size: 0.875rem;
+  }
+}
+

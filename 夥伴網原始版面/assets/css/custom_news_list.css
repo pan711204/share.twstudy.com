@@ -1,0 +1,356 @@
+/* === COURSE LIST === */
+.main {
+  background: #f9f9f9;
+}
+.main .sec-title {
+  display: block;
+  font-weight: bold;
+  margin: 0 auto 20px auto;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-align: left;
+}
+.main .news-sec1 .btn-wrap {
+  text-align: center;
+  margin: 10px auto 40px auto;
+}
+.main .news-sec1 .btn-wrap[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .news-sec1 .btn-wrap.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .news-sec1 .btn-wrap .btn-more-news {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  border: 1px solid #eb835e;
+  background-color: transparent;
+  color: #222;
+  font-size: 1rem;
+  line-height: 45px;
+  -moz-transition: background 0.15s, color 0.15s;
+  -o-transition: background 0.15s, color 0.15s;
+  -webkit-transition: background 0.15s, color 0.15s;
+  transition: background 0.15s, color 0.15s;
+}
+.main .news-sec1 .btn-wrap .btn-more-news:hover {
+  background-color: #eb835e;
+  color: #fff;
+}
+.main .news-list li {
+  display: block;
+  margin: 0 auto 40px auto;
+}
+.main .news-list li[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .news-list li.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .news-list .title {
+  position: relative;
+  padding-right: 95px;
+  margin-bottom: 20px;
+}
+.main .news-list .title:after {
+  content: "";
+  width: 95px;
+  background: #f9f9f9;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .news-list .title:before {
+  content: "";
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  height: 10px;
+  background: url(../images/bg-slash.png) repeat-x 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .news-list .title .more {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  top: 50%;
+  right: 0;
+  padding-right: 30px;
+  padding-left: 10px;
+  color: #222;
+  font-size: 0.9375rem;
+  line-height: 1;
+  text-transform: uppercase;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -moz-transition: color 0.12s;
+  -o-transition: color 0.12s;
+  -webkit-transition: color 0.12s;
+  transition: color 0.12s;
+}
+.main .news-list .title .more:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -7px;
+  width: 18px;
+  height: 14px;
+  background: url(../images/icon-more-aw.png) no-repeat right center;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .news-list .title .more:hover {
+  color: #eb8662;
+}
+.main .news-list .title > h3 {
+  z-index: 1;
+  font-size: 1.5625rem;
+  line-height: 1;
+  padding: 0 15px 0 40px;
+  position: relative;
+  display: inline-block;
+  color: #222;
+  font-weight: 400;
+}
+.main .news-list .title > h3 span {
+  position: relative;
+  z-index: 2;
+}
+.main .news-list .title > h3 .icon {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: -5px;
+  width: 43px;
+  height: 43px;
+  margin-top: -21px;
+}
+.main .news-list .title > h3 .icon img {
+  max-width: 100%;
+}
+.main .news-list .title > h3:after {
+  content: "";
+  background: #f9f9f9;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.main .course-list {
+  font-size: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.main .course-list li {
+  display: inline-block;
+  vertical-align: top;
+  width: 33.3%;
+  font-size: 1rem;
+  margin: 0 auto 35px auto;
+  padding: 0 10px;
+}
+.main .course-list li[data-plugin="scroll-view"] {
+  opacity: 0;
+  -moz-transform: translate(0, 5%);
+  -ms-transform: translate(0, 5%);
+  -webkit-transform: translate(0, 5%);
+  transform: translate(0, 5%);
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.main .course-list li.scroll-view {
+  opacity: 1;
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+.main .course-list li .title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+.main .course-list li .title:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  top: 0;
+  left: -3px;
+  background: url(../images/icon-news-aw.png) no-repeat 0 0;
+  -moz-background-size: auto 100%;
+  -o-background-size: auto 100%;
+  -webkit-background-size: auto 100%;
+  background-size: auto 100%;
+}
+.main .course-list li .img {
+  position: relative;
+  width: 100%;
+  display: block;
+  padding-bottom: 52.85%;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.main .course-list li .img:before {
+  border: 1px solid #e5e5e5;
+  z-index: 1;
+  pointer-event: none;
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+}
+.main .course-list li .img img {
+  position: absolute;
+  z-index: 0;
+  max-width: 100%;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.main .course-list li .btns {
+  display: block;
+  font-size: 0;
+  width: 100%;
+}
+.main .course-list li .btns .btn-detail, .main .course-list li .btns .btn-recom {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1rem;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  width: calc(50% - 5px);
+  -moz-transition: background 0.15s;
+  -o-transition: background 0.15s;
+  -webkit-transition: background 0.15s;
+  transition: background 0.15s;
+}
+.main .course-list li .btns .btn-detail {
+  background: #525252;
+  margin-right: 10px;
+}
+.main .course-list li .btns .btn-detail:hover {
+  background: #333;
+}
+.main .course-list li .btns .btn-recom {
+  background: #f97141;
+}
+.main .course-list li .btns .btn-recom:hover {
+  background: #F95A3E;
+}
+
+@media (max-width: 767px), (min-width: 992px) and (max-width: 1199px) {
+  .main .course-list li {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .main .sec-title {
+    font-size: 1.4rem;
+  }
+  .main .news-list li .title > h3 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .main .sec-title {
+    font-size: 1.3rem;
+  }
+  .main .news-list li .title > h3 {
+    font-size: 1.3rem;
+  }
+  .main .news-list li .title .more {
+    padding-right: 25px;
+    padding-left: 10px;
+    font-size: 0.8125rem;
+  }
+  .main .news-list li .title:after {
+    width: 70px;
+  }
+  .main .course-list li .btns .btn-detail, .main .course-list li .btns .btn-recom {
+    font-size: 0.9375rem;
+    line-height: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 599px) {
+  .main .course-list {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .course-list li {
+    max-width: 510px;
+    display: block;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=custom_news_list.css.map */

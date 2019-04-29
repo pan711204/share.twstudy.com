@@ -1,0 +1,220 @@
+/* === REGISTER === */
+/*忘記密碼*/
+.popup-getpwd {
+  max-width: 650px;
+  margin: 0 auto;
+  border-top: #195ecf solid 3px;
+  background: #fff;
+  position: relative;
+}
+.popup-getpwd .mfp-close {
+  display: block;
+  float: none;
+  position: absolute;
+  top: -40px!important;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  font-size: 24px;
+  color: #fff!important;
+  text-align: center;
+  opacity: .7;
+  line-height: 42px;
+  background-color: #195ecf;
+  text-shadow: none;
+}
+.popup-getpwd .mfp-close:active, .popup-getpwd .mfp-close:focus {
+  margin: 0;
+}
+.popup-getpwd .subtitle {
+  font-size: 18px;
+  text-align: center;
+  margin: 0 auto 20px auto;
+}
+.popup-getpwd .subtitle:before {
+  content: "";
+  width: 210px;
+  height: 80px;
+  background: url(../images/twstudy_logo.svg) no-repeat 0 50%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.popup-getpwd .inner{
+  padding: 30px;
+  background: url(../images/box_bg.gif) repeat;
+  border-top: #dedede solid 1px;
+}
+.popup-getpwd .form-box {
+  padding: 0;
+  margin: 0 auto 15px auto;
+}
+.popup-getpwd .form-box .icon{
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  float: left;
+  text-align: center;
+  display: block;
+  border: #ccc solid 1px;
+  border-right: none;
+  background-color: #ddd;
+  -webkit-border-radius: 3px 0 0 3px;
+     -moz-border-radius: 3px 0 0 3px;
+          border-radius: 3px 0 0 3px;
+}
+.popup-getpwd .form-box .input-style {
+  border: none;
+  background: #fff;
+  color: #fff;
+  height: 35px;
+  float: right;
+  padding: 0 10px;
+  width: calc(100% - 35px);
+  display: block;
+  border: #ccc solid 1px;
+  outline: none;
+  -webkit-border-radius: 0 3px 3px 0;
+     -moz-border-radius: 0 3px 3px 0;
+          border-radius: 0 3px 3px 0;
+}
+.popup-getpwd .form-box .input-style::-webkit-input-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style::-moz-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style:-ms-input-placeholder {
+  color: #999;
+}
+.popup-getpwd .form-box .input-style:-moz-placeholder {
+  color: #999;
+}
+.popup-getpwd .btn-resend {
+  height: 35px;
+  width: 100%;
+  padding: 0;
+  border-radius: 30px;
+  border: none;
+  display: block;
+  font-size: 0.875rem;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(bottom, #333b3c, #333b3c);
+  background-image: -moz-linear-gradient(bottom, #333b3c, #333b3c);
+  background-image: -o-linear-gradient(bottom, #333b3c, #333b3c);
+  background-image: -ms-linear-gradient(bottom, #333b3c, #333b3c);
+  background-image: linear-gradient(to top, #333b3c, #333b3c);
+  color:#fff;
+}
+.popup-getpwd .btn-resend:hover {
+  color: #fff;
+  text-decoration: none;
+  background-image: -webkit-linear-gradient(bottom, #333b3c, #576364);
+  background-image: -moz-linear-gradient(bottom, #333b3c, #576364);
+  background-image: -o-linear-gradient(bottom, #333b3c, #576364);
+  background-image: -ms-linear-gradient(bottom, #333b3c, #576364);
+  background-image: linear-gradient(to top, #333b3c, #576364);
+}
+.popup-getpwd .vertify-info {
+  margin-top: 20px;
+}
+.popup-getpwd .vertify-info .title {
+  position: relative;
+}
+.popup-getpwd .vertify-info .title:after {
+  content: "";
+  width: 10px;
+  background: #eee;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -webkit-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+.pink { color: #e50451; }
+.popup-getpwd .vertify-info .title > h4 {
+  z-index: 1;
+  font-size: 0.875rem;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  color: #222;
+}
+.popup-getpwd .vertify-info .title > h4 span {
+  z-index: 2;
+  position: relative;
+}
+.popup-getpwd .vertify-info .list {
+  list-style: decimal;
+  padding-left: 20px;
+}
+.popup-getpwd .vertify-info .list li {
+  list-style: decimal;
+  display: list-item;
+  list-style-position: outside;
+  margin: 0 auto 5px auto;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 991px) {
+  .popup-getpwd .subtitle {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .popup-getpwd {
+    padding: 20px 30px 30px 30px;
+  }
+  .popup-getpwd .subtitle {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .popup-getpwd .subtitle:before {
+    width: 150px;
+    height: 57px;
+    margin-bottom: 0;
+    display: none;
+  }
+  .popup-getpwd .subtitle:after {
+    content: "";
+    background: #f97141;
+    height: 1px;
+    width: 50px;
+    margin-left: -25px;
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+  }
+  .popup-getpwd .form-box {
+    margin: 0 auto 10px auto;
+  }
+  .popup-getpwd .form-box .label-style {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .popup-getpwd .btn-resend {
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 399px) {
+  .popup-getpwd {
+    padding: 20px 15px 30px 15px;
+  }
+  .popup-getpwd .btn-resend {
+    max-width: none;
+    font-size: 0.875rem;
+  }
+}
